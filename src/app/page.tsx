@@ -1,5 +1,6 @@
 // pages/index.tsx
 import React from 'react'
+import Link from 'next/link'
 
 const Home: React.FC = () => {
   return (
@@ -50,6 +51,14 @@ const Home: React.FC = () => {
           <ul className="list-disc pl-5 mt-2 text-gray-700">
             <li>Assisted in developing responsive UI using Tailwind CSS and React.</li>
             <li>Worked on API integrations using Node.js and Express.</li>
+          </ul>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="text-xl font-bold text-gray-800">Project</h3>
+          <ul className="list-disc pl-5 mt-2 text-gray-700">
+            <li><Link href={`/table/`}>Tabel</Link></li>
+            <li><Link href={`/navbar/`}>Navbar</Link></li>
           </ul>
         </div>
       </section>
