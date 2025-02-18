@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faGraduationCap, faCode, faUser, faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
-import { faReact, faNode, faFigma, faGithub, faLinkedin,faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faNode, faFigma, faGithub,faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Home: React.FC = () => {
   return (
@@ -113,14 +113,14 @@ const Home: React.FC = () => {
 
       <footer className="mt-8 text-center text-gray-500">
         <div className="flex justify-center gap-6">
-          <a href="https://github.com/Ahmadhan2005" target="_blank" className="text-gray-700 hover:underline flex items-center gap-2">
+          <Link href="https://github.com/Ahmadhan2005" target="_blank" className="text-gray-700 hover:underline flex items-center gap-2">
             <FontAwesomeIcon icon={faGithub} className="text-gray-700 w-10 h-10" />
             GitHub
-          </a>
-          <a href="https://www.tiktok.com/@tzbronz" target="_blank" className="text-black hover:underline flex items-center gap-2">
+          </Link>
+          <Link href="https://www.tiktok.com/@tzbronz" target="_blank" className="text-black hover:underline flex items-center gap-2">
             <FontAwesomeIcon icon={faTiktok} className="text-black-700 w-10 h-10" />
             Tiktok
-          </a>
+          </Link>
         </div>
         <p className="mt-2">&copy; 2025 Ahmadhan Syafiere. All rights reserved.</p>
       </footer>
