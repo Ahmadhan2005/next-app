@@ -3,11 +3,14 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faGraduationCap, faCode, faUser, faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
-import { faReact, faNode, faFigma, faGithub,faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faNode, faCss, faFigma, faGithub,faTiktok } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "./components/navbar";
 
 const Home: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <>
+    <Navbar/>
+    <div className="max-w-4xl mx-auto relative pt-20 p-6 bg-white rounded-lg shadow-lg">
       <header className="text-center">
         <img
           src="ahmadhan.jpg"
@@ -43,14 +46,14 @@ const Home: React.FC = () => {
   </div>
   <div className="border rounded-md text-center p-10 m-4 shadow flex flex-col items-center justify-center">
     <FontAwesomeIcon icon={faNode} className="text-green-600 w-10 h-10 mb-4" />
-    Next.js
+    Node.JS
   </div>
   <div className="border rounded-md text-center p-10 m-4 shadow flex flex-col items-center justify-center">
     <FontAwesomeIcon icon={faCode} className="text-gray-600 w-10 h-10 mb-4" />
     TypeScript
   </div>
   <div className="border rounded-md text-center p-10 m-4 shadow flex flex-col items-center justify-center">
-    <FontAwesomeIcon icon={faCode} className="text-blue-400 w-10 h-10 mb-4" />
+    <FontAwesomeIcon icon={faCss} className="text-blue-400 w-10 h-10 mb-4" />
     Tailwind CSS
   </div>
   <div className="border rounded-md text-center p-10 m-4 shadow flex flex-col items-center justify-center">
@@ -125,6 +128,7 @@ const Home: React.FC = () => {
         <p className="mt-2">&copy; 2025 Ahmadhan Syafiere. All rights reserved.</p>
       </footer>
     </div>
+    </>
   );
 };
 
